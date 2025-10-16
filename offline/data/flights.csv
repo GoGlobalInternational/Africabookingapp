@@ -1,0 +1,5 @@
+FlightNumber,From,To,Date,Time,Price,SeatsAvailable
+AF101,Johannesburg,London,2025-11-01,08:00,650,150
+AF102,Cape Town,Paris,2025-11-02,10:00,700,120
+AF103,Durban,Dubai,2025-11-03,14:00,550,100
+AF104,Johannesburg,New York,2025-11-04,16:00,800,200
