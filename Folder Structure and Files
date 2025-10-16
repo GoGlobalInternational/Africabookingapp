@@ -1,0 +1,15 @@
+Africabookingapp/
+│
+├── offline/
+│   ├── main.py
+│   ├── ui/
+│   │   └── logo.png
+│   ├── data/
+│   │   ├── flights.csv
+│   │   └── users.csv
+│   └── scripts/
+│       ├── auth.py
+│       ├── booking.py
+│       └── checkin.py
+│
+└── README.md
