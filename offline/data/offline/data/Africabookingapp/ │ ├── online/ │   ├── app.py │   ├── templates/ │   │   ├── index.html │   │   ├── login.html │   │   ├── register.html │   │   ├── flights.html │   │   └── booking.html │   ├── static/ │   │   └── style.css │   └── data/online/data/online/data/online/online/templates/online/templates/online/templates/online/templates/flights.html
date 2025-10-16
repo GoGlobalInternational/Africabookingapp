@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Flights</title></head>
+<body>
+<h2>Available Flights</h2>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<table border="1">
+<tr>
+<th>Flight</th><th>From</th><th>To</th><th>Date</th><th>Time</th><th>Price</th><th>Seats</th><th>Actions</th>
+</tr>
+{% for flight in flights %}
+<tr>
+<td>{{ flight.FlightNumber }}</td>
+<td>{{ flight.From }}</td>
+<td>{{ flight.To }}</td>
+<td>{{ flight.Date }}</td>
+<td>{{ flight.Time }}</td>
+<td>${{ flight.Price }}</td>
+<td>{{ flight.SeatsAvailable }}</td>
+<td>
+    <a href="{{ url_for('book', flight_number=flight.FlightNumber) }}">Book</a> |
+    <a href="{{ url_for('checkin', flight_number=flight.FlightNumber) }}">Check-in</a>
+</td>
+</tr>
+{% endfor %}
+</table>
+<br>
+<a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
