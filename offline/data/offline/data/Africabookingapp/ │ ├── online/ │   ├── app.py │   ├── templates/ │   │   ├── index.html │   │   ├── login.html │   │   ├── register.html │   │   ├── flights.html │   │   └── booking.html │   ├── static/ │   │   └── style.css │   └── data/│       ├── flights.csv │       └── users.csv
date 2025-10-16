@@ -1,0 +1,15 @@
+Africabookingapp/
+│
+├── online/
+│   ├── app.py
+│   ├── templates/
+│   │   ├── index.html
+│   │   ├── login.html
+│   │   ├── register.html
+│   │   ├── flights.html
+│   │   └── booking.html
+│   ├── static/
+│   │   └── style.css
+│   └── data/
+│       ├── flights.csv
+│       └── users.csv
